@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <h1 class="logo-home">Request API key</h1>
+    <div class="redText">
+        <span id="s-error-span"></span>
+    </div>
+    <div class="s-grid-container">
+        <div class="s-grid-left">
+            <div class="s-result-section">
+                Api Key : <span id="apikey-span"> Not Available</span>
+                <br>
+                Books:
+                <div id="s-books-list"></div>
+            </div>
+        </div>
+
+        <div class="s-grid-center">
+            <button id="sami-apikey-button" class="s-buttons">Get api key</button>
+            <hr>
+            <button id="sami-addbook-button" class="s-buttons">Add Book</button>
+            <button id="sami-viewall-button" class="s-buttons">View All Books</button>
+            <button id="sami-changebook-button" class="s-buttons">Change Book</button>
+            <button id="sami-deletebook-button" class="s-buttons">Delete Book</button>
+        </div>
+
+        <div class="s-grid-right">
+            <p>Book ID: </p><span id="s-book-id"></span><br>
+            <label for="name">Book title: </label><br>
+            <input type="text" id="s-book-title">
+            <br>
+            <label for="name">Book Author: </label><br>
+            <input type="text" id="s-book-author">
+        </div>
+    </div>
+</body>
+
+</html>
